@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.jundat95.sqlitedemo.view.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToDo"
+        android:fontFamily="serif-monospace"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ListView
+        android:id="@+id/recycle_list_to_do"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/txtAppName"
+        android:layout_above="@+id/btnAddToDo"
+        />
+
+    <Button
+        android:id="@+id/btnAddToDo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

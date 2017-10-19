@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jundat95.sqlitedemo.view.activity.AddToDoActivity">
+
+    <TextView
+        android:id="@+id/edtAddToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Add To Do"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtAddToDo"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtTitle"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Description"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtDescription"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="1995-02-20"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAddToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtDate"
+        android:layout_marginTop="39dp"
+        android:textColor="@color/colorAccent"
+        android:text="Add To Do" />
+
+</RelativeLayout>
